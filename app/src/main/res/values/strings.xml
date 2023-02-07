@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Super Awesome App</string>
+  <string name="get_location_and_sunrise">Get My Sunrise Sunset</string>
+  <string name="length_of_day">Length of Day: %s</string>
+</resources>

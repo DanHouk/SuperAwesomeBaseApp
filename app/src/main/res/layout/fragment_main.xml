@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/cardview_dark_background"
+  tools:context=".ui.main.MainFragment">
+
+  <ImageView
+    android:id="@+id/main_fragment_iv"
+    android:layout_width="@dimen/fill_constraint"
+    android:layout_height="@dimen/image_height"
+    android:src="@drawable/hello_world_pic"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <FrameLayout
+    android:id="@+id/main_fragment_left_purple_fl"
+    android:layout_width="70dp"
+    android:layout_height="100dp"
+    android:background="@color/design_default_color_primary"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/main_fragment_iv"
+    app:layout_constraintBottom_toTopOf="@+id/main_fragment_btn"/>
+
+
+  <!--TODO: This message is going outside its constraints-->
+  <TextView
+    android:id="@+id/main_fragment_message_tv"
+    android:layout_width="@dimen/fill_constraint"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="30sp"
+    android:gravity="center"
+    tools:text = "Length of Day: 13:45:55"
+    app:layout_constraintEnd_toStartOf="@id/main_fragment_right_purple_fl"
+    app:layout_constraintStart_toEndOf="@id/main_fragment_left_purple_fl"
+    app:layout_constraintTop_toBottomOf="@id/main_fragment_iv"
+    app:layout_constraintBottom_toTopOf="@+id/main_fragment_btn"/>
+
+  <FrameLayout
+    android:id="@+id/main_fragment_right_purple_fl"
+    android:layout_width="70dp"
+    android:layout_height="100dp"
+    android:background="@color/design_default_color_primary"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/main_fragment_iv"
+    app:layout_constraintBottom_toTopOf="@+id/main_fragment_btn"/>
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/main_fragment_btn"
+    android:layout_width="@dimen/fill_constraint"
+    android:layout_height="@dimen/button_height"
+    android:background="@color/bright_red"
+    android:text="@string/get_location_and_sunrise"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+Stuff to do:
+1.) Write a unit test
+2.) Convert RxJava to Co/Flow and move to viewmodel
+3.) Use location to get data.
+4.) Properly add a view in ConstraintLayout?

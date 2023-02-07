@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="fill_constraint">0dp</dimen>
+  <dimen name="button_height">75dp</dimen>
+  <dimen name="image_height">500dp</dimen>
+</resources>
